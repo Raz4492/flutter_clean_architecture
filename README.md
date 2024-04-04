@@ -16,7 +16,7 @@ This is a Flutter application that fetches user information from a dummy API and
 5. Run `flutter run` to start the application on your connected device or emulator.
 
 ## Folder Structure
-
+```yaml
 lib/
   |- core/
   |   |- errors/
@@ -48,3 +48,4 @@ lib/
   |       |- user_info_bloc.dart
   |
   |- main.dart
+```
