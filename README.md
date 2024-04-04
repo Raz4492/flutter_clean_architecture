@@ -17,3 +17,34 @@ This is a Flutter application that fetches user information from a dummy API and
 
 ## Folder Structure
 
+lib/
+  |- core/
+  |   |- errors/
+  |   |   |- app_error.dart
+  |   |- constants/
+  |   |   |- app_constants.dart
+  |   |- utils/
+  |       |- app_utils.dart
+  |
+  |- domain/
+  |   |- entities/
+  |   |   |- user.dart
+  |   |- repositories/
+  |   |   |- user_repository.dart
+  |   |- usecases/
+  |       |- get_user_info.dart
+  |
+  |- data/
+  |   |- repositories_impl/
+  |   |   |- user_repository_impl.dart
+  |   |- datasources/
+  |       |- user_api.dart
+  |
+  |- presentation/
+  |   |- screens/
+  |   |   |- user_info_screen.dart
+  |   |- widgets/
+  |   |- blocs/
+  |       |- user_info_bloc.dart
+  |
+  |- main.dart
