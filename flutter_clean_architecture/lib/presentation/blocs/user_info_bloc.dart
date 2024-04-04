@@ -7,7 +7,7 @@ import 'UserInfoEvent.dart';
 import 'UserInfoState.dart';
 
 class UserInfoBloc extends Bloc<UserInfoEvent, UserInfoState> {
-  final GetUserInfo getUserInfo;
+  final GetUserDomainInfo getUserInfo;
 
   UserInfoBloc(this.getUserInfo) : super(UserInfoInitial()) {
     on<FetchUserInfo>(_mapFetchUserInfoToState);

@@ -22,7 +22,7 @@ import 'package:my_flutter_app/presentation/screens/user_info_screen.dart';
 void main() {
   testWidgets('UserInfoScreen displays user info', (WidgetTester tester) async {
     final UserRepository userRepository = UserRepositoryImpl(UserApi());
-    final GetUserInfo getUserInfo = GetUserInfo(userRepository);
+    final GetUserDomainInfo getUserInfo = GetUserDomainInfo(userRepository);
     final UserInfoBloc userInfoBloc = UserInfoBloc(getUserInfo);
 
     await tester.pumpWidget(

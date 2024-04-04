@@ -6,7 +6,7 @@ import 'package:my_flutter_app/domain/entities/user.dart';
 import '../../core/constants/pp_constants.dart';
 
 class UserApi {
-  Future<User> getUserInfo() async {
+  Future<User> getUserApiUserInfo() async {
     final response = await http.get(Uri.parse(AppConstants.apiUrl));
     if (response.statusCode == 200) {
       final List<dynamic> jsonData = json.decode(response.body);

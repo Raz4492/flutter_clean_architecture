@@ -8,7 +8,7 @@ class UserRepositoryImpl implements UserRepository {
   UserRepositoryImpl(this.userApi);
 
   @override
-  Future<User> getUserInfo() async {
-    return userApi.getUserInfo();
+  Future<User> getUserRepositoryInfo() async {
+    return userApi.getUserApiUserInfo();
   }
 }

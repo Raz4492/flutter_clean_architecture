@@ -18,13 +18,13 @@ import 'package:my_flutter_app/presentation/screens/user_info_screen.dart';
 
 void main() {
   final UserRepository userRepository = UserRepositoryImpl(UserApi());
-  final GetUserInfo getUserInfo = GetUserInfo(userRepository);
+  final GetUserDomainInfo getUserInfo = GetUserDomainInfo(userRepository);
 
   runApp(MyApp(getUserInfo: getUserInfo));
 }
 
 class MyApp extends StatelessWidget {
-  final GetUserInfo getUserInfo;
+  final GetUserDomainInfo getUserInfo;
 
   const MyApp({Key? key, required this.getUserInfo}) : super(key: key);
 

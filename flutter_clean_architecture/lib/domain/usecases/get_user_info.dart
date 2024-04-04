@@ -1,12 +1,12 @@
 import 'package:my_flutter_app/domain/entities/user.dart';
 import 'package:my_flutter_app/domain/repositories/user_repository.dart';
 
-class GetUserInfo {
+class GetUserDomainInfo {
   final UserRepository repository;
 
-  GetUserInfo(this.repository);
+  GetUserDomainInfo(this.repository);
 
   Future<User> call() async {
-    return repository.getUserInfo();
+    return repository.getUserRepositoryInfo();
   }
 }
